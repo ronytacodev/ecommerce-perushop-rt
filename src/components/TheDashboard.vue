@@ -111,7 +111,11 @@
                     <v-card flat outlined tile>
                         <v-toolbar flat>
                             <v-icon color="black" class="mr-2">mdi-chevron-down</v-icon>
+                            <strong>CATEGORIES</strong>
+                            <v-spacer></v-spacer>
+                            <v-icon color="grey" small>mdi-close</v-icon>
                         </v-toolbar>
+                        <v-list dense class="mt-n5"></v-list>
                     </v-card>
                 </v-col>
             </v-row>
