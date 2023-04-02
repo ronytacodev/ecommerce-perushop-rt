@@ -157,6 +157,28 @@
                             </v-list-item>
                         </v-list>
                     </v-card>
+                    <v-card flat outlined tile>
+                        <v-toolbar flat>
+                            <v-icon color="black" class="mr-2">mdi-chevron-down</v-icon>
+                            <strong>COLOR</strong>
+                            <v-spacer></v-spacer>
+                            <v-icon color="grey" small>mdi-close</v-icon>
+                        </v-toolbar>
+                        <v-chip-group column multiple>
+                            <v-chip filter outlined color="black" text-color="black" class="ml-2"></v-chip>
+                            <v-chip filter color="#E6E6E6" text-color="black"></v-chip>
+                            <v-chip filter color="#FFB500" text-color="white"></v-chip>
+                            <v-chip filter color="#F27229" text-color="white"></v-chip>
+                            <v-chip filter color="#EB3427" text-color="white"></v-chip>
+                            <v-chip filter color="#923FA3" text-color="white"></v-chip>
+                            <v-chip filter color="#3A51DF" text-color="white" class="ml-2"></v-chip>
+                            <v-chip filter color="#23A7F5" text-color="white"></v-chip>
+                            <v-chip filter color="#5EB524" text-color="white"></v-chip>
+                            <v-chip filter color="#7C5F40" text-color="white"></v-chip>
+                            <v-chip filter color="black" text-color="white"></v-chip>
+                            <v-chip filter color="lime" text-color="white"></v-chip>
+                        </v-chip-group>
+                    </v-card>
                 </v-col>
             </v-row>
         </v-card>
