@@ -115,7 +115,16 @@
                             <v-spacer></v-spacer>
                             <v-icon color="grey" small>mdi-close</v-icon>
                         </v-toolbar>
-                        <v-list dense class="mt-n5"></v-list>
+                        <v-list dense class="mt-n5">
+                            <v-list-item v-for="style in styles" :key="style.title">
+                                <v-list-item-content>
+                                    <v-list-item-title v-text="style.title" class="ml-8 text-left"></v-list-item-title>
+                                </v-list-item-content>
+                                <v-list-item-action>
+                                    <v-list-item-subtitle v-text="style.count"></v-list-item-subtitle>
+                                </v-list-item-action>
+                            </v-list-item>
+                        </v-list>
                     </v-card>
                 </v-col>
             </v-row>
@@ -146,6 +155,44 @@ export default {
                 text: "Shoes",
                 disabled: false,
                 href: "breadcrumbs_shoes",
+            },
+        ],
+        styles: [
+            {
+                title: 'Lifestyle',
+                count: '1',
+            },
+            {
+                title: 'Running',
+                count: '23',
+            },
+            {
+                title: 'Training & Gym',
+                count: '45',
+            },
+            {
+                title: 'Basketball',
+                count: '11',
+            },
+            {
+                title: 'Football',
+                count: '15',
+            },
+            {
+                title: 'Soccer',
+                count: '32',
+            },
+            {
+                title: 'Baseball',
+                count: '8',
+            },
+            {
+                title: 'Golf',
+                count: '15',
+            },
+            {
+                title: 'Skateboarding',
+                count: '22',
             },
         ],
     })
