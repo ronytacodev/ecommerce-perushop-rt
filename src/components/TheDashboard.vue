@@ -44,6 +44,14 @@
                                 <v-btn color="black" dark class="withoutupercase" small tile>
                                     new
                                 </v-btn>
+                                <h6 class="white--text mt-8">DOWN JACKET</h6>
+                                <h3 class="white--text mt-5">Sale Collection 2023</h3>
+                                <v-btn rounded color="#8375E7" dark class="withoutupercase px-8 mt-3">
+                                    More Info
+                                </v-btn>
+                            </v-col>
+                            <v-col cols="12" sm="6">
+                                <v-img src="jacket2.png" max-height="400" max-width="420" contain class="mt-n2"></v-img>
                             </v-col>
                         </v-row>
                     </v-card>
