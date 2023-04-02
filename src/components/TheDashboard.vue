@@ -179,6 +179,19 @@
                             <v-chip filter color="lime" text-color="white"></v-chip>
                         </v-chip-group>
                     </v-card>
+                    <v-card flat outlined>
+                        <v-toolbar flat>
+                            <v-icon color="black" class="mr-2">mdi-chevron-down</v-icon>
+                            <strong>SIZE</strong>
+                            <v-spacer></v-spacer>
+                            <v-icon color="grey" small>mdi-close</v-icon>
+                        </v-toolbar>
+                        <v-chip-group column multiple active-class="blue white--text" class="ml-2">
+                            <v-chip v-for="size in sizes" :key="size" :value="size" class="size">
+                                {{ size }}
+                            </v-chip>
+                        </v-chip-group>
+                    </v-card>
                 </v-col>
             </v-row>
         </v-card>
@@ -265,6 +278,9 @@ export default {
                 title: 'Basketball',
                 state: false,
             },
+        ],
+        sizes: [
+            '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45', '46',
         ],
     })
 }
