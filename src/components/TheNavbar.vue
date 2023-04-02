@@ -41,6 +41,7 @@ export default {
 
 .v-badge__badge {
     font-size: 10px !important;
-    /* me quede en el min 09.12 */
+    height: 18px !important;
+    min-width: 18px !important;
 }
 </style>
