@@ -126,6 +126,37 @@
                             </v-list-item>
                         </v-list>
                     </v-card>
+                    <v-card flat outlined tile>
+                        <v-toolbar flat>
+                            <v-icon color="black" class="mr-2">mdi-chevron-down</v-icon>
+                            <strong>PRICE</strong>
+                            <v-spacer></v-spacer>
+                            <v-icon color="grey" small>mdi-close</v-icon>
+                        </v-toolbar>
+                        <v-toolbar flat>
+                            <v-text-field placeholder="$50" filled rounded dense class="mx-2"></v-text-field>
+                            <v-text-field placeholder="$1900" filled rounded dense class="mx-2"></v-text-field>
+                        </v-toolbar>
+                        <v-range-slider color="blue" max="40" min="-30"></v-range-slider>
+                    </v-card>
+                    <v-card flat outlined tile>
+                        <v-toolbar flat>
+                            <v-icon color="black" class="mr-2">mdi-chevron-down</v-icon>
+                            <strong>BRAND</strong>
+                            <v-spacer></v-spacer>
+                            <v-icon color="grey" small>mdi-close</v-icon>
+                        </v-toolbar>
+                        <v-list dense class="mt-n5">
+                            <v-list-item v-for="brand in brands" :key="brand.title">
+                                <v-list-item-content>
+                                    <v-list-item-title v-text="brand.title" class="ml-8 text-left"></v-list-item-title>
+                                </v-list-item-content>
+                                <v-list-item-action>
+                                    <v-checkbox color="primary" v-model="brand.state"></v-checkbox>
+                                </v-list-item-action>
+                            </v-list-item>
+                        </v-list>
+                    </v-card>
                 </v-col>
             </v-row>
         </v-card>
@@ -193,6 +224,24 @@ export default {
             {
                 title: 'Skateboarding',
                 count: '22',
+            },
+        ],
+        brands: [
+            {
+                title: 'Lifestyle',
+                state: true,
+            },
+            {
+                title: 'Running',
+                state: false,
+            },
+            {
+                title: 'Training & Gym',
+                state: true,
+            },
+            {
+                title: 'Basketball',
+                state: false,
             },
         ],
     })
