@@ -225,7 +225,7 @@ export default {
 }
 
 .card1 {
-    z-index: 10;
+    z-index: 1;
 }
 
 .card2 {
