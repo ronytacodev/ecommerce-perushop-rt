@@ -216,7 +216,12 @@
                                                 <v-icon>mdi-cart-outlined</v-icon>
                                                 Buy
                                             </v-btn>
-
+                                            <v-btn fab small color="white" class="ml-2">
+                                                <v-icon color="black">mdi-content-copy</v-icon>
+                                            </v-btn>
+                                            <v-btn fab small color="white" class="ml-2">
+                                                <v-icon color="black">mdi-heart-outline</v-icon>
+                                            </v-btn>
                                         </div>
                                     </v-expand-transition>
                                 </v-card>
@@ -426,7 +431,7 @@ export default {
     justify-content: center;
     opacity: .5;
     position: absolute;
-    widows: 100%;
+    width: 100%;
 }
 
 .card1 {
